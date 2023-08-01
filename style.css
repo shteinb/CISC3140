@@ -1,0 +1,110 @@
+/* Apply styles to the form container */
+#form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light opaque background color */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Apply styles to the form elements */
+form {
+  font-family: Arial, sans-serif; /* Use a different font-family */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="tel"],
+input[type="date"] {
+  width: 99%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 150px; /* Resize the buttons */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"] {
+  background-color: #0056b3;
+}
+
+/* Apply hover effect on images */
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+/* Apply focus effect on input elements */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #007bff; /* Change focus outline color */
+}
+
+/* Use table to organize the form fields */
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+}
+
+/* Make preferences checkboxes horizontal */
+.preference-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preference-item {
+  flex: 0 0 33.33%;
+  margin-bottom: 15px;
+}
+
+/* Add text focus on hover */
+.preference-item label:hover {
+  color: #007bff; /* Change the text color when hovering over the label */
+  cursor: pointer;
+}
+
+/* Apply styles to the about-link container */
+#about-link-container {
+  text-align: right;
+  padding: 10px;
+}
+
+/* Style the "About Us" link */
+#about-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+#about-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

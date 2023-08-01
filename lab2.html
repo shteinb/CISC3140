@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form-container" action="/submit" method="post">
+	    <div id="header">
+			<a href="about.html" id="about-link">About Us</a>
+		</div>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1><b> Please place your order here</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Scrum-Delicious-Burgers_EXPS_CHMZ19_824_B10_30_2b.jpg" alt="Delicious Burger" width="400" height="400">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">	
+                    <ol>
+                        <li>Beef Burger</li>
+                        <li>Bison Burger</li>
+                        <li>Lamb Burger</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dropdown">Select Option:</label>
+                </td>
+                <td>
+                    <select id="dropdown" name="dropdown">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of Delivery:</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" name="dob" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Preference:</label>
+                    <div class="preference-container">
+                        <div class="preference-item">
+                            <input type="checkbox" id="lettuce" name="preference[]" value="Lettuce">
+                            <label for="lettuce">Lettuce</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="beans" name="preference[]" value="Beans">
+                            <label for="beans">Beans</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="rice" name="preference[]" value="Rice">
+                            <label for="rice">Rice</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="tomato" name="preference[]" value="Tomato">
+                            <label for="tomato">Tomato</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="fajita" name="preference[]" value="Fajita">
+                            <label for="fajita">Fajita</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="pollo-asada" name="preference[]" value="Pollo Asada">
+                            <label for="pollo-asada">Pollo Asada</label>
+                        </div>
+                        <div class="preference-item">
+                            <input type="checkbox" id="french-fries" name="preference[]" value="French Fries">
+                            <label for="french-fries">French Fries</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" name="phone" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <iframe src="https://www.youtube.com/embed/avEBVTvYePk" title="burgers" style="height:300px;width:450px;"></iframe>
+    </form>
+</body>
+</html>
